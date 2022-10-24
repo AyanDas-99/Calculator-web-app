@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --ff-display:'Share Tech Mono', monospace;
+    --ff-btn:'Poppins', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    border: 1px solid black;
+    background-color: rgb(41, 41, 41);
+    margin: 1em auto;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.display {
+    height: 200px;
+    background-color: rgb(219, 211, 221);
+    border-radius: 10px;
+    font-family: var(--ff-display);
+    padding: 1em;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.current {
+    display: block;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1em;
+    right: 0;
+    margin-right: 1em;
+}
+
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    margin: 2em 0;
+}
+
+.btn {
+    /* padding: 1em; */
+    color: white;
+    background-color: grey;
+    text-align: center;
+    width: 100%;
+    padding: .5em 0;
+    font-size: 2rem;
+    font-family: var(--ff-btn);
+}
+
+.btn:hover {
+    background-color: darkgrey;
+}
